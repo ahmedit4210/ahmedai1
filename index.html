@@ -3,485 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ฯๆัวส วแะ฿วม วแวีุไวฺํ</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <title>ูุฑุดุฉ ุงูุฐูุงุก ุงูุงุตุทูุงุนู ุงูุดุงู…ูุฉ โ€“ ุทุฑููู ูุญู ุงูุงุญุชุฑุงู!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #f8f9fa;
-            color: #2d3748;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .card {
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-        .feature-icon {
-            background-color: rgba(102, 126, 234, 0.1);
-            color: #667eea;
-            border-radius: 50%;
-            padding: 15px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: 27px;
-            top: 0;
-            height: 100%;
-            width: 2px;
-            background-color: #667eea;
-            z-index: 0;
-        }
-        .timeline-dot {
-            z-index: 1;
-            background-color: white;
-        }
-        @media print {
-            .page-break {
-                page-break-before: auto;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="min-h-screen">
+<body>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="ุชุจุฏูู ุงููุถุน">
+        <span class="sun-icon">โ€๏ธ</span>
+        <span class="moon-icon">๐</span>
+    </button>
+
     <!-- Hero Section -->
-    <header class="gradient-bg text-white py-20">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap items-center">
-                <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">ฯๆัวส วแะ฿วม วแวีุไวฺํ</h1>
-                    <p class="text-xl mb-6">วไุแÞ Ýํ ัอแษ สฺแใ วแะ฿วม วแวีุไวฺํ ๆว฿สำศ วแใๅวัวส วแสํ ำสิ฿แ ใำสÞศแ วแส฿ไๆแๆฬํว ๆวแวศส฿วั</p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#beginner" class="bg-white text-indigo-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300">ฯๆัวส แแใศสฯฦํไ</a>
-                        <a href="#advanced" class="bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:bg-opacity-10 transition duration-300">ฯๆัวส แแใสÞฯใํไ</a>
-                    </div>
-                </div>
-                <div class="w-full lg:w-1/2">
-                    <img src="https://mystro-learning.com/wp-content/uploads/2024/06/%D8%AA%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%84%D9%84%D9%85%D8%A8%D8%AA%D8%AF%D8%A6%D9%8A%D9%86.jpg" alt="สฺแใ วแะ฿วม วแวีุไวฺํ" class="rounded-lg shadow-xl mx-auto">
-                </div>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    ๐€ ูุฑุดุฉ ุงูุฐูุงุก ุงูุงุตุทูุงุนู ุงูุดุงู…ูุฉ โ€“ ุทุฑููู ูุญู ุงูุงุญุชุฑุงู!
+                </h1>
+                <p class="hero-subtitle">
+                    ุงูุชุณุจ ู…ูุงุฑุงุช ุงูุฐูุงุก ุงูุงุตุทูุงุนู ุงูุนู…ููุฉ ูุงูุชุญ ุขูุงููุง ุฌุฏูุฏุฉ ูู…ุณุชูุจูู ุงูู…ููู!
+                </p>
+                <a href="https://wa.me/96895114010" class="cta-button primary" target="_blank">
+                    <span class="whatsapp-icon">๐“ฑ</span>
+                    ุงุญุฌุฒ ุงูุขู ุนุจุฑ ูุงุชุณุงุจ
+                </a>
             </div>
-        </div>
-    </header>
-
-    <!-- Introduction -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">แใวะว สฺแใ วแะ฿วม วแวีุไวฺํ ใๅใ วแํๆใฟ</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="text-center p-6 rounded-lg shadow-md card bg-white">
-                    <div class="feature-icon mb-4 mx-auto">
-                        <i class="fas fa-chart-line text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">ใฬวแ ำัํฺ วแไใๆ</h3>
-                    <p class="text-gray-600">ํิๅฯ ใฬวแ วแะ฿วม วแวีุไวฺํ ไใๆว๐ ๅวฦแว๐ก อํห สสีฯั ๆูวฦÝ วแะ฿วม วแวีุไวฺํ Þวฦใษ วแๆูวฦÝ วแรำัฺ ไใๆว๐ ฮแวแ วแำไๆวส วแÞวฯใษ.</p>
-                </div>
-                <div class="text-center p-6 rounded-lg shadow-md card bg-white">
-                    <div class="feature-icon mb-4 mx-auto">
-                        <i class="fas fa-money-bill-wave text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">ัๆวสศ ใัสÝฺษ</h3>
-                    <p class="text-gray-600">ํีแ ใสๆำุ ัวสศ ใๅไฯำ วแะ฿วม วแวีุไวฺํ Ýํ วแๆแวํวส วแใสอฯษ ลแ์ 153,719 ฯๆแวัว๐ ำไๆํว๐ก ใฺ ลใ฿วไํษ วแอีๆแ ฺแ์ ใ฿วÝยส ๆอๆวÝา ลึวÝํษ.</p>
-                </div>
-                <div class="text-center p-6 rounded-lg shadow-md card bg-white">
-                    <div class="feature-icon mb-4 mx-auto">
-                        <i class="fas fa-brain text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">สอฯ๒ Ý฿ัํ</h3>
-                    <p class="text-gray-600">วแะ฿วม วแวีุไวฺํ ใฬวแ ใอÝา Ý฿ัํว๐ ํสึใไ ศไวม ฮๆวัาใํวส แอแ ใิ฿แวส ใฺÞฯษ ๆสีใํใ ไใวะฬ สอว฿ํ วแะ฿วม วแศิัํ.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Beginner Courses -->
-    <section id="beginner" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">ฯๆัวส วแะ฿วม วแวีุไวฺํ แแใศสฯฦํไ</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg overflow-hidden shadow-md card">
-                    <img src="https://holistiquetraining.com/storage/%D8%A3%D9%81%D8%B6%D9%84-%D9%83%D9%88%D8%B1%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%84%D8%B9%D8%A7%D9%85-2024-%D8%AF%D9%84%D9%8A%D9%84-%D8%B4%D8%A7%D9%85%D9%84-%D9%84%D8%A3%D9%87%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9.png" alt="วแะ฿วม วแวีุไวฺํ แแฬใํฺ" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">วแะ฿วม วแวีุไวฺํ แแฬใํฺ</h3>
-                        <p class="text-gray-600 mb-4">ฯๆัษ ใฬวไํษ ฺแ์ ใไีษ ฿ๆัำํัว สส฿ๆไ ใไ 4 ๆอฯวส ัฦํำํษ สÞฯใ ไูัษ ิวใแษ ฺไ วแะ฿วม วแวีุไวฺํ ๆสุศํÞวสๅ Ýํ วแิั฿วส ๆวแใฬสใฺ.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded">ใฬวไํ</span>
-                            <span class="text-gray-500">ใฯษ วแฯๆัษ: 4 รำวศํฺ</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow-md card">
-                    <img src="https://aiarabic1.com/wp-content/uploads/2023/08/%D8%AF%D9%88%D8%B1%D8%A7%D8%AA-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%85%D8%AC%D8%A7%D9%86%D8%A7%D9%8B-4.png" alt="ใÞฯใษ Ýํ วแะ฿วม วแวีุไวฺํ" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">ใÞฯใษ Ýํ วแะ฿วม วแวีุไวฺํ - ฬวใฺษ ๅวัÝวัฯ</h3>
-                        <p class="text-gray-600 mb-4">ฯๆัษ CS50 แแะ฿วม วแวีุไวฺํ ใไ ฬวใฺษ ๅวัÝวัฯก ใสวอษ ใฬวไว๐ แแใศสฯฦํไ ๆสÛุํ วแใÝวๅํใ วแรำวำํษ แแะ฿วม วแวีุไวฺํ.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded">ใฬวไํ</span>
-                            <span class="text-gray-500">ใฯษ วแฯๆัษ: 12 รำศๆฺ</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow-md card">
-                    <img src="https://graboppo.com/wp-content/uploads/2025/05/google-ai-course-free-certificate.jpg" alt="รำวำํวส วแะ฿วม วแวีุไวฺํ ใไ Google" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">รำวำํวส วแะ฿วม วแวีุไวฺํ ใไ Google</h3>
-                        <p class="text-gray-600 mb-4">ฯๆัษ ใฬวไํษ ใไ Google สÞฯใ ใÞฯใษ ฺไ รำวำํวส วแะ฿วม วแวีุไวฺํ วแสๆแํฯํ ใฺ ิๅวฯษ ใฺสใฯษ.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded">ใฬวไํ</span>
-                            <span class="text-gray-500">ใฯษ วแฯๆัษ: 6 รำวศํฺ</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow-md card">
-                    <img src="https://eduhub21.com/wp-content/uploads/2024/08/%D8%AF%D9%88%D8%B1%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-768x768.jpg.webp" alt="รำวำํวส วแะ฿วม วแวีุไวฺํ ฺแ์ Microsoft Azure" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">รำวำํวส วแะ฿วม วแวีุไวฺํ ฺแ์ Microsoft Azure</h3>
-                        <p class="text-gray-600 mb-4">ฯๆัษ สฯัํศํษ ใีใใษ แแสฺัÝ ฺแ์ รไๆวฺ อแๆแ วแะ฿วม วแวีุไวฺํ ๆวแฮฯใวส วแใสๆÝัษ ฺแ์ ใไีษ Microsoft Azure.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded">ใฬวไํ</span>
-                            <span class="text-gray-500">ใฯษ วแฯๆัษ: 4 รำวศํฺ</span>
-                        </div>
+            <div class="hero-visual">
+                <div class="ai-brain">
+                    <div class="brain-core"></div>
+                    <div class="neural-network">
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Advanced Courses -->
-    <section id="advanced" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">ฯๆัวส วแะ฿วม วแวีุไวฺํ วแใสÞฯใษ</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg overflow-hidden shadow-md card">
-                    <img src="https://mystro-learning.com/wp-content/uploads/2024/06/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%AA%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%84%D9%84%D9%85%D8%A8%D8%AA%D8%AF%D8%A6%D9%8A%D9%86-1024x634.jpg" alt="สฺแใ วแยแษ" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">สฺแใ วแยแษ - Machine Learning</h3>
-                        <p class="text-gray-600 mb-4">ฯๆัษ ใสฮีีษ ใไ ใไีษ ฿ๆัำํัว สส฿ๆไ ใไ 3 ฿ๆัำวส สฺแํใํษ สÛุํ ใÝๅๆใ วแสฺแใ วแยแํ ๆรไๆวฺๅ ๆวำสฮฯวใวสๅ Ýํ วแอํวษ วแํๆใํษ.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded">ใฯÝๆฺ</span>
-                            <span class="text-gray-500">ใฯษ วแฯๆัษ: 2 ิๅั</span>
-                        </div>
+    <!-- Workshop Highlights -->
+    <section class="highlights">
+        <div class="container">
+            <h2 class="section-title">ู…ุงุฐุง ุณุชุชุนูู… ูู ุงููุฑุดุฉุ</h2>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <span class="check-icon">โ…</span>
+                    <p>ุฃุณุงุณูุงุช ุงูุฐูุงุก ุงูุงุตุทูุงุนู ูุชุทุจููุงุชู ุงูุนู…ููุฉ</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="check-icon">โ…</span>
+                    <p>ููุฏุณุฉ ุงูุฃูุงู…ุฑ (Prompt Engineering)</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="check-icon">โ…</span>
+                    <p>ุชุญููู ุงูุจูุงูุงุช ูุชูุธูููุง</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="check-icon">โ…</span>
+                    <p>ุฅูุดุงุก ูุชุนุฏูู ุงูุตูุฑ ุจุงูุฐูุงุก ุงูุงุตุทูุงุนู</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="check-icon">โ…</span>
+                    <p>ุชุญููู ุงููุตูุต ุฅูู ุตูุช ุงุญุชุฑุงูู</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="check-icon">โ…</span>
+                    <p>ุงูุฐูุงุก ุงูุงุตุทูุงุนู ูู ุงูุชุณููู ูุงูุฅุนูุงูุงุช</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">ู…ุง ุณุชุญุตู ุนููู</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">๐“</div>
+                    <h3>ุดูุงุฏุฉ ู…ุนุชู…ุฏุฉ</h3>
+                    <p>ุดูุงุฏุฉ ู…ุนุชู…ุฏุฉ ู…ู ู…ุนูุฏ ุตุญุงุฑ</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">๐“</div>
+                    <h3>ู…ูู ุชูุงุนูู</h3>
+                    <p>ู…ูู PDF ุชูุงุนูู ุดุงู…ู</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">๐</div>
+                    <h3>ุดูุงุฏุฉ ุดูุฑ</h3>
+                    <p>ุดูุงุฏุฉ ุดูุฑ ุฑูู…ูุฉ</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">๐’ก</div>
+                    <h3>ุชุฏุฑูุจ ุนู…ูู</h3>
+                    <p>ุชุฏุฑูุจ ุนู…ูู ู…ุจุงุดุฑ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="event-details">
+        <div class="container">
+            <h2 class="section-title">ุชูุงุตูู ุงููุฑุดุฉ</h2>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <div class="detail-icon">๐“…</div>
+                    <div class="detail-content">
+                        <h3>ุงูุชุงุฑูุฎ</h3>
+                        <p>ุงูุฃุฑุจุนุงุก 19 ูุจุฑุงูุฑ 2025</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow-md card">
-                    <img src="https://mystro-learning.com/wp-content/uploads/2024/06/%D8%AA%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%84%D9%84%D9%85%D8%A8%D8%AA%D8%AF%D8%A6%D9%8A%D9%86.jpg" alt="ใฺวแฬษ วแแÛษ วแุศํฺํษ" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">ใฺวแฬษ วแแÛษ วแุศํฺํษ ใฺ วแสฺแใ วแฺใํÞ</h3>
-                        <p class="text-gray-600 mb-4">ฯๆัษ ใสÞฯใษ ฺแ์ ใไีษ Udemy สิัอ ฿ํÝํษ ใฺวแฬษ วแแÛษ วแุศํฺํษ ศวำสฮฯวใ สÞไํวส วแสฺแใ วแฺใํÞ Ýํ ศวํหๆไ.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded">ใฯÝๆฺ</span>
-                            <span class="text-gray-500">ใฯษ วแฯๆัษ: 12 ำวฺษ</span>
-                        </div>
+                <div class="detail-item">
+                    <div class="detail-icon">โฐ</div>
+                    <div class="detail-content">
+                        <h3>ุงูููุช</h3>
+                        <p>7:00 ู…ุณุงุกู</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow-md card">
-                    <img src="https://aiarabic1.com/wp-content/uploads/2023/08/%D8%AF%D9%88%D8%B1%D8%A7%D8%AA-%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%85%D8%AC%D8%A7%D9%86%D8%A7%D9%8B-2.png" alt="ิๅวฯษ วแะ฿วม วแวีุไวฺํ วแสุศํÞํ ใไ IBM" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">ิๅวฯษ วแะ฿วม วแวีุไวฺํ วแสุศํÞํ ใไ IBM</h3>
-                        <p class="text-gray-600 mb-4">ำแำแษ ใส฿วใแษ ใไ 10 ฿ๆัำวส สๆÝั วแใๅวัวส วแแวาใษ แศไวม สุศํÞวส วอสัวÝํษ ศวำสฮฯวใ วแะ฿วม วแวีุไวฺํ.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded">ใฯÝๆฺ</span>
-                            <span class="text-gray-500">ใฯษ วแฯๆัษ: 6 ริๅั</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow-md card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzFX57ZOf5uJshKcyhtTN8F6vYGYTrkzvq_bcqmJfcejBZPQQRn4kuW_QrRNLCnTTrd1Jf1WvMBRPdq8doXYiXun4rZEy2aiD2jSIMIKolXpJeCUnXTxf5ezoOyB5pl-QPTdpo_O5-MBVzpOWfLFj2OkNqzxQvvrZuZimsCRbSx0BMBxWiB0UQXckxcxzM/s1284/%D8%A3%D9%81%D8%B6%D9%84%20%D8%AF%D9%88%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A.webp" alt="วแะ฿วม วแวีุไวฺํ ใไ วแรแÝ ลแ์ วแํวม" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">วแะ฿วม วแวีุไวฺํ ใไ วแรแÝ ลแ์ วแํวม</h3>
-                        <p class="text-gray-600 mb-4">ฯๆัษ ิวใแษ ฺแ์ ใไีษ ํๆฯํใํ สำสๅฯÝ สุๆํั ใๅวัวส วแะ฿วม วแวีุไวฺํ ใไ ฮแวแ 10 รÞำวใ ใสไๆฺษ.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded">ใฯÝๆฺ</span>
-                            <span class="text-gray-500">ใฯษ วแฯๆัษ: 15 ำวฺษ</span>
-                        </div>
+                <div class="detail-item">
+                    <div class="detail-icon">๐“</div>
+                    <div class="detail-content">
+                        <h3>ุงูู…ูุงู</h3>
+                        <p>ุนุจุฑ Google Meet</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Learning Path -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">ฮัํุษ สฺแใ วแะ฿วม วแวีุไวฺํ</h2>
-            <div class="relative pl-12 max-w-3xl mx-auto">
-                <div class="timeline-item relative pb-12">
-                    <div class="flex items-center mb-2">
-                        <div class="absolute right-[-42px] w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center timeline-dot">
-                            <i class="fas fa-book text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mr-5">วแสฺัÝ ฺแ์ วแรำวำํวส</h3>
-                    </div>
-                    <p class="text-gray-600 mr-5">วศฯร ศÝๅใ วแใÝวๅํใ วแรำวำํษ แแะ฿วม วแวีุไวฺํ ๆสวัํฮๅ ๆรไๆวฺๅ วแใฮสแÝษ.</p>
-                </div>
-                <div class="timeline-item relative pb-12">
-                    <div class="flex items-center mb-2">
-                        <div class="absolute right-[-42px] w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center timeline-dot">
-                            <i class="fas fa-calculator text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mr-5">ฯัวำษ วแัํวึํวส ๆวแลอีวม</h3>
-                    </div>
-                    <p class="text-gray-600 mr-5">สฺแใ วแฬศั วแฮุํก วแสÝวึแ ๆวแส฿วใแก ๆวแลอีวม วแึัๆัํ แÝๅใ วแฮๆวัาใํวส.</p>
-                </div>
-                <div class="timeline-item relative pb-12">
-                    <div class="flex items-center mb-2">
-                        <div class="absolute right-[-42px] w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center timeline-dot">
-                            <i class="fas fa-code text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mr-5">สฺแใ วแศัใฬษ</h3>
-                    </div>
-                    <p class="text-gray-600 mr-5">ลสÞวไ แÛษ ศวํหๆไ ๆวแใ฿สศวส วแรำวำํษ ใหแ NumPy ๆPandas ๆScikit-learn.</p>
-                </div>
-                <div class="timeline-item relative pb-12">
-                    <div class="flex items-center mb-2">
-                        <div class="absolute right-[-42px] w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center timeline-dot">
-                            <i class="fas fa-brain text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mr-5">Ýๅใ วแสฺแใ วแยแํ</h3>
-                    </div>
-                    <p class="text-gray-600 mr-5">สฺแใ ฮๆวัาใํวส วแสฺแใ วแยแํ วแรำวำํษ ใหแ วแวไอฯวัก วแสีไํÝก ๆวแสฬใํฺ.</p>
-                </div>
-                <div class="timeline-item relative pb-12">
-                    <div class="flex items-center mb-2">
-                        <div class="absolute right-[-42px] w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center timeline-dot">
-                            <i class="fas fa-network-wired text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mr-5">วแสฺัÝ ฺแ์ วแิศ฿วส วแฺีศํษ ๆวแสฺแใ วแฺใํÞ</h3>
-                    </div>
-                    <p class="text-gray-600 mr-5">ฯัวำษ รำวำํวส วแิศ฿วส วแฺีศํษก วแสฺแใ วแฺใํÞก ๆวำสฮฯวใ รุั ใหแ TensorFlow ๆPyTorch.</p>
-                </div>
-                <div class="timeline-item relative pb-12">
-                    <div class="flex items-center mb-2">
-                        <div class="absolute right-[-42px] w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center timeline-dot">
-                            <i class="fas fa-language text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mr-5">ฯัวำษ ใฺวแฬษ วแแÛษ วแุศํฺํษ</h3>
-                    </div>
-                    <p class="text-gray-600 mr-5">สฺแใ สÞไํวส ใฺวแฬษ วแแÛษ วแุศํฺํษ ๆสุศํÞวสๅว Ýํ สอแํแ วแไีๆี ๆÝๅใ วแแÛษ.</p>
-                </div>
-                <div class="timeline-item relative">
-                    <div class="flex items-center mb-2">
-                        <div class="absolute right-[-42px] w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center timeline-dot">
-                            <i class="fas fa-laptop-code text-white"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mr-5">วแฺใแ ฺแ์ วแใิวัํฺ วแฺใแํษ</h3>
-                    </div>
-                    <p class="text-gray-600 mr-5">ศไวม ใอÝูษ ใิวัํฺ ๆวÞฺํษ สุศÞ Ýํๅว ใๅวัวส วแะ฿วม วแวีุไวฺํ วแใฮสแÝษ.</p>
-                </div>
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>ูุง ุชููุช ูุฐู ุงููุฑุตุฉ ุงูุฐูุจูุฉ!</h2>
+                <p>ุงูุถู… ุฅูููุง ูุงูุชุณุจ ู…ูุงุฑุงุช ุงูู…ุณุชูุจู</p>
+                <a href="https://wa.me/96895114010" class="cta-button primary large" target="_blank">
+                    <span class="whatsapp-icon">๐“ฑ</span>
+                    ุงุญุฌุฒ ู…ูุนุฏู ุงูุขู
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- AI Career Paths -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">วแใำวัวส วแใๅไํษ Ýํ ใฬวแ วแะ฿วม วแวีุไวฺํ</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-6 rounded-lg shadow-md card bg-white">
-                    <div class="flex items-center mb-4">
-                        <div class="feature-icon mr-4">
-                            <i class="fas fa-code text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">ใๅไฯำ ศัใฬํวส วแะ฿วม วแวีุไวฺํ</h3>
-                    </div>
-                    <p class="text-gray-600">สุๆํั ๆสไÝํะ รไูใษ วแะ฿วม วแวีุไวฺํ ๆลไิวม ฮๆวัาใํวส ใสÞฯใษ แอแ วแใิ฿แวส วแใฺÞฯษ.</p>
-                </div>
-                <div class="p-6 rounded-lg shadow-md card bg-white">
-                    <div class="flex items-center mb-4">
-                        <div class="feature-icon mr-4">
-                            <i class="fas fa-chart-bar text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">ใสฮีี ฺแใ วแศํวไวส</h3>
-                    </div>
-                    <p class="text-gray-600">ฬใฺ ๆสอแํแ วแศํวไวส วแึฮใษ แศไวม ไใวะฬ วแะ฿วม วแวีุไวฺํ ๆวำสฮัวฬ ัฤ์ Þํใษ.</p>
-                </div>
-                <div class="p-6 rounded-lg shadow-md card bg-white">
-                    <div class="flex items-center mb-4">
-                        <div class="feature-icon mr-4">
-                            <i class="fas fa-cogs text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">ใๅไฯำ สฺแใ ยแํ</h3>
-                    </div>
-                    <p class="text-gray-600">สีใํใ ๆสุๆํั วแฮๆวัาใํวส วแสํ ส๕ใ฿๘ไ รไูใษ วแะ฿วม วแวีุไวฺํ ใไ วแสฺแใ ใไ วแศํวไวส.</p>
-                </div>
-                <div class="p-6 rounded-lg shadow-md card bg-white">
-                    <div class="flex items-center mb-4">
-                        <div class="feature-icon mr-4">
-                            <i class="fas fa-language text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">ใๅไฯำ ใฺวแฬษ วแแÛษ วแุศํฺํษ</h3>
-                    </div>
-                    <p class="text-gray-600">สุๆํั รไูใษ วแะ฿วม วแวีุไวฺํ วแÞวฯัษ ฺแ์ Ýๅใ ๆลไิวม วแแÛษ วแศิัํษ ศิ฿แ ุศํฺํ.</p>
-                </div>
-                <div class="p-6 rounded-lg shadow-md card bg-white">
-                    <div class="flex items-center mb-4">
-                        <div class="feature-icon mr-4">
-                            <i class="fas fa-robot text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">ใๅไฯำ ัๆศๆสวส</h3>
-                    </div>
-                    <p class="text-gray-600">สีใํใ ๆศไวม วแัๆศๆสวส วแสํ สฺใแ ศวแะ฿วม วแวีุไวฺํ ๆสสÝวฺแ ใฺ วแศํฦษ วแใอํุษ.</p>
-                </div>
-                <div class="p-6 rounded-lg shadow-md card bg-white">
-                    <div class="flex items-center mb-4">
-                        <div class="feature-icon mr-4">
-                            <i class="fas fa-lightbulb text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">ใุๆั ะ฿วม วแรฺใวแ</h3>
-                    </div>
-                    <p class="text-gray-600">วำสฮฯวใ สÞไํวส วแะ฿วม วแวีุไวฺํ Ýํ สุศํÞวส ะ฿วม วแรฺใวแ แสอำํไ ฺใแํษ ีไฺ วแÞัวั.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/96895114010" class="sticky-whatsapp" target="_blank" aria-label="ุชูุงุตู ุนุจุฑ ูุงุชุณุงุจ">
+        <span class="whatsapp-icon">๐’ฌ</span>
+        <span class="sticky-text">ุชูุงุตู ูุงุญุฌุฒ ุงูุขู</span>
+    </a>
 
-    <!-- Skills Required -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">วแใๅวัวส วแใุแๆศษ แแะ฿วม วแวีุไวฺํ</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="p-6 rounded-lg shadow-md bg-white">
-                    <h3 class="text-xl font-bold mb-4">วแใๅวัวส วแสÞไํษ</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-600">
-                        <li>แÛวส วแศัใฬษ (ศวํหๆไก Rก ฬวÝว)</li>
-                        <li>วแสฺแใ วแยแํ ๆวแสฺแใ วแฺใํÞ</li>
-                        <li>ใฺวแฬษ วแแÛษ วแุศํฺํษ</li>
-                        <li>วแัฤํษ วแอวำๆศํษ</li>
-                        <li>สอแํแ วแศํวไวส วแึฮใษ</li>
-                        <li>วแใ฿สศวส ๆวแรุั (TensorFlowก PyTorchก scikit-learn)</li>
-                        <li>วแัํวึํวส ๆวแลอีวม</li>
-                        <li>ๅไฯำษ วแศํวไวส</li>
-                    </ul>
-                </div>
-                <div class="p-6 rounded-lg shadow-md bg-white">
-                    <h3 class="text-xl font-bold mb-4">วแใๅวัวส วแิฮีํษ</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-600">
-                        <li>วแสÝ฿ํั วแไÞฯํ</li>
-                        <li>อแ วแใิ฿แวส วแใฺÞฯษ</li>
-                        <li>วแÝึๆแ ๆวแัÛศษ Ýํ วแสฺแใ วแใำสใั</li>
-                        <li>วแฺใแ วแฬใวฺํ ๆวแสๆวีแ</li>
-                        <li>วแลศฯวฺ ๆวแวศส฿วั</li>
-                        <li>Ýๅใ วอสํวฬวส วแฺใแวม ๆวแรฺใวแ</li>
-                        <li>วแÞฯัษ ฺแ์ วแส฿ํÝ ใฺ วแสÞไํวส วแฬฯํฯษ</li>
-                        <li>วแีศั ๆวแใหวศัษ</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">วแรำฦแษ วแิวฦฺษ ฺไ ฯๆัวส วแะ฿วม วแวีุไวฺํ</h2>
-            <div class="max-w-3xl mx-auto space-y-6">
-                <div class="p-6 rounded-lg shadow-md bg-white">
-                    <h3 class="text-xl font-bold mb-2">฿ใ ใไ วแๆÞส ํำสÛัÞ สฺแใ วแะ฿วม วแวีุไวฺํฟ</h3>
-                    <p class="text-gray-600">ํฮสแÝ วแๆÞส วแแวาใ แสฺแใ วแะ฿วม วแวีุไวฺํ อำศ ใฺัÝส฿ วแำวศÞษ ๆวแๆÞส วแะํ ํใ฿ไ฿ สฮีํีๅ แแสฺแใ. Þฯ ํำสÛัÞ วแรใั ใไ ฺฯษ ริๅั ลแ์ ำไษ รๆ ร฿หั แว฿สำวศ Ýๅใ ใสํไ แแใÝวๅํใ ๆวแใๅวัวส วแแวาใษ.</p>
-                </div>
-                <div class="p-6 rounded-lg shadow-md bg-white">
-                    <h3 class="text-xl font-bold mb-2">ๅแ รอสวฬ ลแ์ ฮแÝํษ ศัใฬํษ แฯัวำษ วแะ฿วม วแวีุไวฺํฟ</h3>
-                    <p class="text-gray-600">ไฺใก สฺฯ ใๅวัวส วแศัใฬษ ึัๆัํษ แสฺแใ วแะ฿วม วแวีุไวฺํ วแฺใแํ. ํ๕ๆี์ ศสฺแใ แÛษ ศวํหๆไ ฺแ์ ๆฬๅ วแฮีๆี แรไๅว วแร฿หั วำสฮฯวใ๐ว Ýํ ๅะว วแใฬวแ. ๆใฺ ะแ฿ก สๆฬฯ ฯๆัวส สใๅํฯํษ แแใศสฯฦํไ ศฯๆไ ฮแÝํษ ศัใฬํษ.</p>
-                </div>
-                <div class="p-6 rounded-lg shadow-md bg-white">
-                    <h3 class="text-xl font-bold mb-2">ใว ๅํ รÝึแ วแิๅวฯวส วแใฺสใฯษ Ýํ ใฬวแ วแะ฿วม วแวีุไวฺํฟ</h3>
-                    <p class="text-gray-600">ใไ ศํไ วแิๅวฯวส วแใฺสใฯษ วแÞํใษ: ิๅวฯษ IBM แแะ฿วม วแวีุไวฺํ วแสุศํÞํก ิๅวฯษ Google Ýํ วแะ฿วม วแวีุไวฺํก ิๅวฯษ Microsoft Azure AIก ๆิๅวฯวส วแฬวใฺวส วแใัใๆÞษ ใหแ ฬวใฺษ ำสวไÝๆัฯ ๆๅวัÝวัฯ ๆMIT.</p>
-                </div>
-                <div class="p-6 rounded-lg shadow-md bg-white">
-                    <h3 class="text-xl font-bold mb-2">ๅแ ํใ฿ไ สฺแใ วแะ฿วม วแวีุไวฺํ ใฬวไ๐วฟ</h3>
-                    <p class="text-gray-600">ไฺใก ๅไว฿ วแฺฯํฯ ใไ วแฯๆัวส วแใฬวไํษ ฺวแํษ วแฬๆฯษ วแใสวอษ ฺศั วแลไสัไส ฺแ์ ใไีวส ใหแ Coursera ๆedX ๆKhan Academy. ฿ใว สๆÝั ศฺึ ิั฿วส วแส฿ไๆแๆฬํว วแ฿ศั์ ใหแ Google ๆMicrosoft ฯๆัวส ใฬวไํษ Ýํ วแะ฿วม วแวีุไวฺํ.</p>
-                </div>
-                <div class="p-6 rounded-lg shadow-md bg-white">
-                    <h3 class="text-xl font-bold mb-2">ใว วแÝัÞ ศํไ วแะ฿วม วแวีุไวฺํ ๆวแสฺแใ วแยแํ ๆวแสฺแใ วแฺใํÞฟ</h3>
-                    <p class="text-gray-600">วแะ฿วม วแวีุไวฺํ ๅๆ วแใฬวแ วแรๆำฺ วแะํ ํิํั ลแ์ วแรไูใษ วแสํ สอว฿ํ วแะ฿วม วแศิัํ. วแสฺแใ วแยแํ ๅๆ Ýัฺ ใไ วแะ฿วม วแวีุไวฺํ ํั฿า ฺแ์ วแฮๆวัาใํวส วแสํ สสฺแใ ใไ วแศํวไวส. วแสฺแใ วแฺใํÞ ๅๆ Ýัฺ ใไ วแสฺแใ วแยแํ ํำสฮฯใ วแิศ฿วส วแฺีศํษ วแฺใํÞษ แแสฺแใ ใไ ฿ใํวส ฿ศํัษ ใไ วแศํวไวส.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="gradient-bg py-16 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-6">วศฯร ัอแส฿ Ýํ สฺแใ วแะ฿วม วแวีุไวฺํ วแํๆใ</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">ใฺ วแสุๆั วแำัํฺ Ýํ ใฬวแ วแส฿ไๆแๆฬํวก รีศอส ใๅวัวส วแะ฿วม วแวีุไวฺํ ร฿หั ุแศว๐ ใไ รํ ๆÞส ใึ์. วำสหใั Ýํ ใำสÞศแ฿ วแใๅไํ ๆวศฯร Ýํ สฺแใ ๅะๅ วแใๅวัวส วแÞํใษ วแํๆใ.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#beginner" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">วำส฿ิÝ วแฯๆัวส แแใศสฯฦํไ</a>
-                <a href="#advanced" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:bg-opacity-10 transition duration-300">วำส฿ิÝ วแฯๆัวส วแใสÞฯใษ</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">ฯๆัวส วแะ฿วม วแวีุไวฺํ</h3>
-                    <p class="text-gray-400">ศๆวศส฿ ลแ์ ฺวแใ วแะ฿วม วแวีุไวฺํ ๆวแสฺแใ วแฺใํÞก ไÞฯใ แ฿ รÝึแ วแฯๆัวส วแสฯัํศํษ วแใ๕ีใใษ แใฮสแÝ วแใำสๆํวส.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">ัๆวศุ ำัํฺษ</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition duration-300">วแีÝอษ วแัฦํำํษ</a></li>
-                        <li><a href="#beginner" class="hover:text-white transition duration-300">ฯๆัวส แแใศสฯฦํไ</a></li>
-                        <li><a href="#advanced" class="hover:text-white transition duration-300">ฯๆัวส ใสÞฯใษ</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">วสีแ ศไว</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">วแใไีวส วแสฺแํใํษ</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="https://www.coursera.org" class="hover:text-white transition duration-300" target="_blank">฿ๆัำํัว</a></li>
-                        <li><a href="https://www.udemy.com" class="hover:text-white transition duration-300" target="_blank">ํๆฯํใํ</a></li>
-                        <li><a href="https://www.edx.org" class="hover:text-white transition duration-300" target="_blank">ลฯ฿ำ</a></li>
-                        <li><a href="https://www.futurelearn.com" class="hover:text-white transition duration-300" target="_blank">Ýํๆสิัแํัไ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">สๆวีแ ใฺไว</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope ml-3"></i>
-                            <span>info@aicourses.com</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone ml-3"></i>
-                            <span>+123 456 7890</span>
-                        </li>
-                        <li>
-                            <div class="flex mt-4 space-x-2 space-x-reverse">
-                                <a href="#" class="bg-gray-700 p-2 rounded-full hover:bg-gray-600 transition duration-300">
-                                    <i class="fab fa-facebook-f text-white"></i>
-                                </a>
-                                <a href="#" class="bg-gray-700 p-2 rounded-full hover:bg-gray-600 transition duration-300">
-                                    <i class="fab fa-twitter text-white"></i>
-                                </a>
-                                <a href="#" class="bg-gray-700 p-2 rounded-full hover:bg-gray-600 transition duration-300">
-                                    <i class="fab fa-linkedin-in text-white"></i>
-                                </a>
-                                <a href="#" class="bg-gray-700 p-2 rounded-full hover:bg-gray-600 transition duration-300">
-                                    <i class="fab fa-instagram text-white"></i>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>ฬใํฺ วแอÞๆÞ ใอÝๆูษ &copy; 2025 - ฯๆัวส วแะ฿วม วแวีุไวฺํ</p>
-            </div>
-        </div>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
